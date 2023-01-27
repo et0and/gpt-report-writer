@@ -3,6 +3,11 @@ import Image from 'next/image';
 import { useState } from 'react';
 import buildspaceLogo from '../assets/buildspace-logo.png';
 
+<Head>
+        <title>Report Writer</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
+
 const Home = () => {
   const [userInput, setUserInput] = useState('');
   const [apiOutput, setApiOutput] = useState('')
@@ -32,6 +37,7 @@ const callGenerateEndpoint = async () => {
     setUserInput(event.target.value);
   };
   return (
+    
     <div className="root">
       <div className="container">
         <div className="header">
