@@ -6,18 +6,34 @@ const Home = () => {
   return (
     <div className="root">
       <Head>
-        <title>GPT-3 Writer | buildspace</title>
+        <title>GPT-3 Report Writer</title>
       </Head>
       <div className="container">
         <div className="header">
           <div className="header-title">
-            <h1>sup, insert your headline here</h1>
+            <h1>GPT-3 Report Writer</h1>
           </div>
           <div className="header-subtitle">
-            <h2>insert your subtitle here</h2>
+            <h2>Write reports for your students with the aid of GPT-3</h2>
           </div>
         </div>
       </div>
+      <<div className="prompt-container">
+  <textarea
+    placeholder="start typing here"
+    className="prompt-box"
+    value={userInput}
+    onChange={onUserChangedText}
+  />
+  {/* New code I added here */}
+  <div className="prompt-buttons">
+    <a className="generate-button" onClick={null}>
+      <div className="generate">
+        <p>Generate</p>
+      </div>
+    </a>
+  </div>
+</div>
       <div className="badge-container grow">
         <a
           href="https://buildspace.so/builds/ai-writer"
