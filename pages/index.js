@@ -18,7 +18,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <<div className="prompt-container">
+      <div className="prompt-container">
   <textarea
     placeholder="start typing here"
     className="prompt-box"
