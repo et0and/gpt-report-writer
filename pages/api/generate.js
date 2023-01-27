@@ -8,7 +8,7 @@ const openai = new OpenAIApi(configuration);
 
 const basePromptPrefix = 
 `
-Generate 5 synonyms based on the keywords entered below.
+Use the keywords below for establishing context and background.
 
 Keywords:
 `
@@ -28,7 +28,7 @@ const generateAction = async (req, res) => {
     // I build Prompt #2.
     const secondPrompt = 
   `
-  Take the generated words and use them to write a report comment written in the style of a high school teacher. Take care to illustrate the student in a positive and constructive manner.
+  Take the keywords and use them to write a report comment written in the style of a high school teacher. Take care to illustrate the student in a positive and constructive manner.
 
   Report:
   `
